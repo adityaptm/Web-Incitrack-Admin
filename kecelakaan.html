@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INCITRACK!</title>
+    <link rel="website icon" type="png" href="incitrack.png" />
+    <link rel="stylesheet" href="kecelakaan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="incitrack.png" alt="INCITRACK" />
+          <span>INCITRACK!</span>
+        </div>
+        <div class="actions">
+          <a href="keluar.html" class="logout-btn"
+            ><i class="fas fa-sign-out-alt"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <ul>
+          <li><a href="pengguna.html">Data Pengguna</a></li>
+          <li><a href="jalan.html">Data Jalan</a></li>
+          <li><a href="kecelakaan.html">Data Kecelakaan</a></li>
+        </ul>
+      </div>
+
+      <div class="main-content">
+        <h2>Data Kecelakaan</h2>
+        <!-- Tabel Data Kecelakaan -->
+        <table
+          class="accident-table"
+          border="1"
+          cellspacing="0"
+          cellpadding="10"
+        >
+          <thead>
+            <tr>
+              <th>NO</th>
+              <th>Tanggal</th>
+              <th>Lokasi</th>
+              <th>Jenis</th>
+              <th>Tautan</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>11/11/2024 18.00</td>
+              <td>92 CRLB</td>
+              <td>Kecelakaan beruntun</td>
+              <td><a href="#" class="link">link</a></td>
+              <td>terverifikasi</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>02/12/2024 08.50</td>
+              <td>85 TRJW</td>
+              <td>Kecelakaan beruntun</td>
+              <td><a href="#" class="link">link</a></td>
+              <td>menunggu verifikasi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

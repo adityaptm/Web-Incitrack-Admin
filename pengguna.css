@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(to right, #d73535, #db8794);
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.actions a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Container */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  background-color: #d9d9d9;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  background-color: #a71d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+.sidebar ul li a.active {
+  background-color: #d9d9d9;
+  color: black;
+  border-radius: 4px;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Main Content Styling */
+.main-content {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Table Styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.user-table thead {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.user-table a:hover {
+  color: darkblue;
+}
+
+/* Add Button */
+.add-user-btn {
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.add-user-btn:hover {
+  background-color: #005bb5;
+}

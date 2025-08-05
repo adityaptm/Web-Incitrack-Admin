@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INCITRACK!</title>
+    <link rel="website icon" type="png" href="incitrack.png" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="incitrack.png" alt="INCITRACK" />
+          <span>INCITRACK!</span>
+        </div>
+        <div class="actions">
+          <a href="index.html" class="login-btn">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <div class="main-container">
+      <div class="login-box">
+        <h2>Login</h2>
+        <!-- Form login -->
+        <form id="loginForm" onsubmit="redirectToIndex(event)">
+          <div class="textbox">
+            <input type="text" placeholder="Username" id="username" required />
+          </div>
+          <div class="textbox">
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              required
+            />
+          </div>
+          <div class="options">
+            <a href="#">Forget Password?</a>
+          </div>
+          <button type="submit" class="btn">Log In</button>
+          <p>Database Incitrack Login</p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function redirectToIndex(event) {
+        event.preventDefault(); // Mencegah form dari submit secara default
+
+        // Mendapatkan nilai dari input username dan password
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Validasi sederhana untuk memastikan input tidak kosong
+        if (username && password) {
+          // Jika valid, arahkan ke halaman index.html
+          window.location.href = "index.html";
+        } else {
+          // Jika tidak valid, tampilkan pesan kesalahan
+          alert("Please enter both username and password.");
+        }
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; INCITRACK 2024</p>
+    </footer>
+  </body>
+</html>
